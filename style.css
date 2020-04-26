@@ -1,7 +1,8 @@
-#head_name .row{
-    align-items:center;
+#head_name .row {
+    align-items: center;
 }
-#head_name h1{
+
+#head_name h1 {
     font-size: 48px;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
@@ -9,29 +10,36 @@
     font-weight: 600;
     color: #181818;
 }
-#head_name h2{
+
+#head_name h2 {
     font-size: 40px;
     letter-spacing: normal;
     font-weight: 400;
     color: #181818;
 }
-#head_img img{
+
+#head_img img {
     /* border-radius: 50%; */
     /* height: 270px;
     width: 270px; */
 }
-#font-icons .fa{
+
+#font-icons .fa {
     font-size: 22px;
     color: #181818;
     margin-top: 20px;
 }
-#font-icons .btn-icon{
-    background-color: rgba(0,0,0,0.1);
+
+#font-icons .btn-icon {
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 10px;
     border-radius: 50%;
     transition: all .2s ease-in-out;
 }
-#font-icons p:hover{
+
+#font-icons p:hover {
     transform: scale(1.1);
 }
+
+
