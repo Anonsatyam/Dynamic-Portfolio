@@ -58,6 +58,16 @@
     border-radius: 15px;
 }
 
+.pushy__btn:hover {
+    background: white;
+    transition: none;
+    border: 1.5px solid #181818;
+}
+
+.pushy__btn:hover a {
+    color: black;
+}
+
 #font-icons .fa {
     font-size: 22px;
     color: #181818;
@@ -97,6 +107,20 @@
     color: #181818 !important;
 }
 
+.darkmode--activated .pushy__btn:hover {
+    background: #181818;
+    transition: none;
+    border: 1px solid #ffffff;
+}
+
+.darkmode--activated .pushy__btn:hover a {
+    color: #ffffff;
+}
+
+.darkmode--activated .pushy__btn:hover .fa-download {
+    color: #ffffff !important;
+}
+
 @media only screen and (max-width: 765px) {
     .col-xs-12 {
         display: flex;
@@ -121,10 +145,42 @@
     }
 
     #head_img {
-        /* height: 350px !important;
-        width: 350px !important; */
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+    }
+}
+
+.darkmode-toggle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    animation: shadow-pulse 1s infinite;
+}
+
+.darkmode--activated .darkmode-toggle {
+    animation: shadow-pulse-white 1s infinite;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.9);
+    }
+
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes shadow-pulse-white {
+    0% {
+        box-shadow: 0 0 0 0px rgb(255, 255, 200);
+    }
+
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
     }
 }
