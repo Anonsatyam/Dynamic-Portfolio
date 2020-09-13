@@ -2,24 +2,6 @@
     align-items: center;
 }
 
-.sweet-alert button {
-    background-color: #43BE31 !important;
-}
-
-.sweet-alert p {
-    color: #181818 !important;
-    font-size: 24px !important;
-}
-
-.sweet-alert .sa-icon.sa-info::before,
-.sweet-alert .sa-icon.sa-info::after {
-    background-color: #FF3031 !important;
-}
-
-.sweet-alert .sa-icon.sa-info {
-    border-color: #43BE31 !important;
-}
-
 #head_name h1 {
     font-size: 48px;
     font-family: 'Poppins', sans-serif;
@@ -40,32 +22,6 @@
     border-radius: 50%;
     height: 270px;
     width: 200px !important;
-}
-
-.btn .pushy__btn {
-    margin-top: 20px;
-    padding-left: 0 !important;
-}
-
-.btn .pushy__btn a {
-    background-color: #181818 !important;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 15px;
-}
-
-.pushy__btn:hover {
-    background: white;
-    transition: none;
-    border: 1.5px solid #181818;
-}
-
-.pushy__btn:hover a {
-    color: black;
 }
 
 #font-icons .fa {
@@ -92,33 +48,17 @@
 .darkmode--activated .fa {
     color: white !important;
 }
-
-.darkmode--activated .pushy__btn--black {
-    background-color: white;
-    color: #181818;
+.darkmode--activated .btns{
+    background: #fff;
+    color: #000;
 }
 
-.darkmode--activated .pushy__btn--black a {
-    color: #181818;
-}
-
-.darkmode--activated .fa-download {
-    /* background-color: white; */
-    color: #181818 !important;
-}
-
-.darkmode--activated .pushy__btn:hover {
-    background: #181818;
-    transition: none;
-    border: 1px solid #ffffff;
-}
-
-.darkmode--activated .pushy__btn:hover a {
-    color: #ffffff;
-}
-
-.darkmode--activated .pushy__btn:hover .fa-download {
-    color: #ffffff !important;
+.btns {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 32px;
 }
 
 @media only screen and (max-width: 765px) {
@@ -136,18 +76,42 @@
     }
 
     #head_name h1 {
-        font-size: 42px;
+        font-size: 26px;
         font-weight: 900;
+        text-align: center;
     }
 
     #head_name h2 {
-        font-size: 38px;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #head_name h5 {
+        text-align: center;
+        font-size: 18px;
     }
 
     #head_img {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+    }
+
+    .darkmode-layer--button,
+    .darkmode-toggle {
+        top: 8px;
+        left: 350px !important;
+    }
+
+    #head_name .row {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .buttons {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -163,6 +127,10 @@
 
 .darkmode--activated .darkmode-toggle {
     animation: shadow-pulse-white 1s infinite;
+}
+
+.darkmode--activated .darkmode-layer--expanded {
+    transform: scale(100) !important;
 }
 
 @keyframes shadow-pulse {
